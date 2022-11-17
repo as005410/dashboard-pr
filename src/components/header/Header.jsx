@@ -1,5 +1,10 @@
 import React from "react";
-import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
+import {
+  BellIcon,
+  InboxIcon,
+  MagnifyingGlassIcon,
+  UserCircleIcon,
+} from "@heroicons/react/24/outline";
 
 function Header() {
   return (
@@ -11,6 +16,11 @@ function Header() {
           placeholder="Search here"
           className="bg-transparent outline-none"
         />
+      </div>
+      <div className="items-center justify-end space-x-6 flex w-full">
+        <BellIcon className="h-6 w-6 cursor-pointer" />
+        <InboxIcon className="h-6 w-6 cursor-pointer" />
+        <UserCircleIcon className="h-6 w-6 cursor-pointer" />
       </div>
     </div>
   );
